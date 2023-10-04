@@ -1,5 +1,9 @@
-import { Fragment } from "react";
 import "../styles/Enterprise.css";
+import categoryIcon from "../assets/category.svg";
+import workIcon from "../assets/work.svg";
+import locationIcon from "../assets/location.svg";
+import phoneIcon from "../assets/phone.svg";
+import mailIcon from "../assets/mail.svg";
 
 export const Enterprise = ({ enterprise, imageUrl }) => {
   const { name, actor, activity, address, phoneList, mailList } = enterprise;
@@ -14,16 +18,15 @@ export const Enterprise = ({ enterprise, imageUrl }) => {
             <div className="card-body">
               <h5 className="card-title">{name}</h5>
               <p className="card-text">
-                <img src="./src/assets/category.svg" alt="Phone icon" /> {actor}
+                <img src={categoryIcon} alt="Phone icon" /> {actor}
               </p>
               <p className="card-text">
-                <img src="./src/assets/work.svg" alt="Phone icon" /> {activity}
+                <img src={workIcon} alt="Phone icon" /> {activity}
               </p>
               <div className="card-text">
                 <small className="text-body-secondary">
                   <div>
-                    <img src="./src/assets/location.svg" alt="Phone icon" />{" "}
-                    {address}
+                    <img src={locationIcon} alt="Phone icon" /> {address}
                   </div>
                 </small>
               </div>
@@ -31,14 +34,14 @@ export const Enterprise = ({ enterprise, imageUrl }) => {
                 <small className="text-body-secondary">
                   {phoneList.map((phone, index) => (
                     <div key={index}>
-                      <img src="./src/assets/phone.svg" alt="Phone icon" />{" "}
+                      <img src={phoneIcon} alt="Phone icon" />{" "}
                       <a href={`tel:${phone}`}>{phone.replace("(+53)", "")}</a>
                       {"   "}
                     </div>
                   ))}{" "}
                   {mailList.map((mail, index) => (
                     <div key={index}>
-                      <img src="./src/assets/mail.svg" alt="Phone icon" />{" "}
+                      <img src={mailIcon} alt="Phone icon" />{" "}
                       <a href={`mailto:${mail}`}>{mail}</a>
                       {"   "}
                     </div>

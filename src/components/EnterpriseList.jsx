@@ -9,6 +9,7 @@ import { useEnterpriseForm } from "../hooks/useEnterpriseForm";
 import { useList } from "../hooks/useList";
 import { FilterContext } from "../providers/filter";
 import TemporaryDrawer from "./TemporaryDrawer";
+import factoryIcon from "../assets/factory_blue.png";
 
 export const EnterpriseList = () => {
   const { filters } = useContext(FilterContext);
@@ -91,7 +92,7 @@ export const EnterpriseList = () => {
           {currentPageList.map((enterprise, index) => {
             let imageUrl = enterpriseImages[enterprise.name];
             if (!imageUrl) {
-              imageUrl = "./src/assets/factory_blue.png";
+              imageUrl = factoryIcon;
             }
             return (
               <Enterprise
