@@ -1,0 +1,24 @@
+.card {
+  padding: 1rem;
+}
+
+.col-md-4 {
+  display: flex;
+  align-items: center;
+}
+
+.img-fluid {
+  width: 80%;
+  align-self: center;
+}
+
+.text-body-secondary {
+  display: flex;
+  /* flex-flow: row; */
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+}

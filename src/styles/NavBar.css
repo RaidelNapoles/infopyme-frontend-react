@@ -1,0 +1,14 @@
+.header-logo {
+  margin-left: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  background-color: #03a9f4;
+}
+
+.search-logo {
+  margin-right: 1rem;
+}

@@ -1,0 +1,22 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+  justify-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  list-style-type: none;
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .card-container ul {
+    width: 100%;
+  }
+}

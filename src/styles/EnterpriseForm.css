@@ -1,0 +1,39 @@
+.form-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.form {
+  padding: 1.5rem;
+  /* width: 50%; */
+}
+
+.btn {
+  width: 100%;
+}
+
+.checkbox-area {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.form-title {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .form {
+    width: 100%;
+  }
+}
